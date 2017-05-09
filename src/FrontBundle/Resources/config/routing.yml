@@ -21,3 +21,7 @@ front_sheet_create:
 front_sheet:
     path:     /sheet/{id}
     defaults: { _controller: FrontBundle:Sheet:sheet }
+
+front_dashboard:
+    path:     /dashboard
+    defaults: { _controller: FrontBundle:Dashboard:index }
