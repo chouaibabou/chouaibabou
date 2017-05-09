@@ -7,6 +7,13 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+
+    {% for message in app.session.flashbag.get('login') %}
+        <div class=""flash">
+            {{ message }}
+        </div>
+    {% endfor %}
+
     {{ render(controller('FOSUserBundle:Security:login')) }}
 
     {% block h1 %}          {% endblock %}

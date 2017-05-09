@@ -10,11 +10,15 @@ namespace FrontBundle\Controller;
 
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class DashboardController extends Controller
 {
-    public function indexAction()
+    public function indexAction(Request $request)
     {
+        var_dump($request); die;
+        $bag= $this->get('session')->getFlashBag();
+        $bag->set('login','vous etes bien connectés');
         return $this-> render('FrontBundle:Dashboard:index.html.twig');
     }
 
