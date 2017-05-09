@@ -1,0 +1,16 @@
+{% extends "::base.html.twig" %}
+
+
+{% block h1 %}
+    <h1>   Titre Sheet List </h1>
+{% endblock %}
+
+{% block body %}
+    <h3> session: </h3>
+
+   {# {{ app.session.flashbag.get('machin')[0] }}#}
+{% endblock %}
+
+{% block footer %}
+    {% include "FrontBundle:Includes:Defaut/Footer.html.twig" %}
+{% endblock %}

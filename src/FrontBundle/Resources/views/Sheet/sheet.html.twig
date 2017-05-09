@@ -1,0 +1,16 @@
+{% extends "::base.html.twig" %}
+
+{% block h1 %}
+    <h1>   Titre Sheet </h1>
+{% endblock %}
+
+{% block body %}
+
+    {# {{ app.session.get('machin') }}//faire une applelation de note session #}
+     {% include "FrontBundle:Includes:Sheets/" ~ id ~ ".html.twig" %}
+    <h3> ID </h3> {{ id }}
+{% endblock %}
+
+{% block footer %}
+    {% include "FrontBundle:Includes:Defaut/Footer.html.twig" %}
+{% endblock %}

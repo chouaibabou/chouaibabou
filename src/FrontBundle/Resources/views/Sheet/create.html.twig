@@ -1,0 +1,16 @@
+{% extends "::base.html.twig" %}
+
+{% block h1 %}
+    <h1>   Titre Create </h1>
+{% endblock %}
+
+{% block body %}
+        {{ form_start(form) }}
+        {{ form_label(form.Nom) }} {{ form_widget(form.Nom) }}
+        {{ form_rest(form) }}
+
+{% endblock %}
+
+{% block footer %}
+    {% include "FrontBundle:Includes:Defaut/Footer.html.twig" %}
+{% endblock %}

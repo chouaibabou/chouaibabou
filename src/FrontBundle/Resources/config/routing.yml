@@ -1,0 +1,23 @@
+front_homepage:
+    path:     /
+    defaults: { _controller: FrontBundle:Default:index }
+
+front_sheet_list:
+    path:     /sheet-list
+    defaults: { _controller: FrontBundle:Sheet:sheetList }
+
+front_sheet_base:
+    path:     /sheet-base/{id2}
+    defaults: { _controller: FrontBundle:Sheet:sheetBase }
+
+front_sheet_doctrine:
+    path:     /sheet-doctrine
+    defaults: { _controller: FrontBundle:Sheet:sheetDoctrine }
+
+front_sheet_create:
+    path:     /sheet/create
+    defaults: { _controller: FrontBundle:Sheet:create }
+
+front_sheet:
+    path:     /sheet/{id}
+    defaults: { _controller: FrontBundle:Sheet:sheet }

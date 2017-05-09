@@ -1,0 +1,18 @@
+{% extends "::base.html.twig" %}
+
+
+{% block h1 %}
+    <h1>   Titre Sheet Doctrine </h1>
+{% endblock %}
+
+{% block body %}
+    <a href="{{ path('front_sheet_create') }}">Create une nouvelle fiche</a> <br/>
+
+    {% for sheet in sheets %}
+        {{ sheet.Nom }}  {{ sheet.Age }}  {{ sheet.Pays }} <a href="{{ path('front_sheet',{'id': sheet.id}) }}">Détails</a> <br/>
+    {% endfor %}
+{% endblock %}
+
+{% block footer %}
+    {% include "FrontBundle:Includes:Defaut/Footer.html.twig" %}
+{% endblock %}

@@ -1,0 +1,22 @@
+services:
+#    front.example:
+#        class: FrontBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+#  sheet_form:
+#      factory_service: form.factory
+#      factory_method: createNamed
+#      class: Symfony\Component\Form\Form
+#      argument:
+#        - sheet
+#        - sheet_form
+#
+#  sheet_type:
+#      class: FontBundle\Form\Type\SheetType
+#      tags:
+#          -{ name: form.type,alias: sheet_form }
+#
+#  sheet_handler:
+#    class: FrontBundle\Form\Handler\SheetHandler
+#    arguments: [@sheet_form, @request, @doctrine.orm.entity_manager]
+#    scope: request

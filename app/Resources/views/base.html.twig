@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Formation Symfony{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    {{ render(controller('FOSUserBundle:Sec')) }}
+
+    {% block h1 %}          {% endblock %}
+    {% block body %}        {% endblock %}
+    {% block footer %}        {% endblock %}
+    {% block javascripts %}{% endblock %}
+    </body>
+</html>

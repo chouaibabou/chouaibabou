@@ -1,0 +1,16 @@
+{% extends "::base.html.twig" %}
+
+{#{% block title %} Modifier le titre de la page {% endblock %}#}
+
+{% block h1 %}
+<h1>    Hello World! </h1>
+{% endblock %}
+
+{% block body %}
+    {% include "FrontBundle:Includes:indexBody.html.twig" %}
+{% endblock %}
+
+
+{% block footer %}
+    {% include "FrontBundle:Includes:Defaut/Footer.html.twig" %}
+{% endblock %}
