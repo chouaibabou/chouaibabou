@@ -2,6 +2,14 @@ front_homepage:
     path:     /
     defaults: { _controller: FrontBundle:Default:index }
 
+front_register:
+    path:     /register
+    defaults: { _controller: FrontBundle:Default:register }
+
+front_redirect_to_Dashboard:
+    path:     /register/confirmed
+    defaults: { _controller: FrontBundle:Default:redirectToDashboard}
+
 front_sheet_list:
     path:     /sheet-list
     defaults: { _controller: FrontBundle:Sheet:sheetList }

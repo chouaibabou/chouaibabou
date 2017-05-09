@@ -16,7 +16,9 @@ class DashboardController extends Controller
 {
     public function indexAction(Request $request)
     {
-        var_dump($request); die;
+//        $rootPath = $this->get('router')->generate('test_front_homepage',array(), true);
+//        var_dump($request->server->['HTTP_REFERER']); die;
+       /* var_dump($request); die;*/
         $bag= $this->get('session')->getFlashBag();
         $bag->set('login','vous etes bien connectés');
         return $this-> render('FrontBundle:Dashboard:index.html.twig');
